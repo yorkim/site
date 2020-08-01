@@ -1,0 +1,181 @@
+html{font:24px/34px Serif;}
+
+h1, h2, h3, h4, h5, h6, nav, .header__title {
+	font-family: 'Roboto Condensed', Arial;
+}
+
+body {
+	background-color:#fff;
+	color:#333;
+	margin:0 auto;
+	padding:1em;
+	animation:fadein 2s;
+	-moz-animation:fadein 2s;
+	-webkit-animation:fadein 2s;
+	-o-animation:fadein 2s;
+	max-width:960px;
+	display:flex;
+	flex-direction:column;
+}
+
+body > * {
+	margin-bottom:1em;
+}
+
+.content {
+	
+}
+
+.header__title > * {
+	display:block;
+	line-height:1.25em;
+	margin:0;
+}
+
+.heading-lvl-1{font-weight:normal;line-height:1em;font-size:1.5em;}
+
+a{text-decoration:underline;color:#09f;transition:all .2s ease-in-out;}
+
+a:hover, a:focus{color:#0bf;}
+
+.header {
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+}
+
+.header__logo {
+	width:100px;
+	height:auto;
+	margin-right:1em;
+}
+
+.header__title > h1 > span {
+    margin-top: 0.25em;
+	color:#bbb;
+	font-size:0.5em;
+	line-height:1.25em;
+	display:block;
+	font-weight:normal;
+}
+
+.header__title span > span {
+    white-space: nowrap;
+	color:#333;
+}
+
+.u-flex--horizontal {
+	display:flex;
+	flex-direction:row;
+}
+
+.main-nav {
+	list-style:none;
+	padding:0;
+	margin:1em 0 0.5em;
+}
+
+.main-nav ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.main-nav li {
+    display: inline-block;
+    /* background-color: #09f; */
+	background-color: #a1ddff;
+    transform: skew(-20deg);
+    border-radius: 0.25em;
+    margin: 0 0.25em 0.5em 0;
+	
+}
+
+.main-nav ul li a{
+	padding: 0.25em 0.75em;
+	display:inline-block;
+	transform: skew(20deg);
+	text-decoration:none;
+	/* color:#fff; */
+	color:#333;
+}
+
+.u-m0 {
+	margin:0;
+}
+
+.u-p0 {
+	padding:0;
+}
+
+.u-p1 {
+	padding:1em;
+}
+
+.u-ml--n1 {
+	margin-left:-1em;
+}
+
+.toggle--dark {
+    background-color: #111;
+    border-radius: 1em;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.u-right {
+	float:right;
+	margin:0 0 0.5em 1em;
+	max-width:40%;
+}
+
+.toggle--dark:before {
+    content:'🌙';
+}
+
+.toggle--dark > span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+@keyframes fadein{from{opacity:0;}
+to{opacity:1;}
+}
+@-moz-keyframes fadein{from{opacity:0;}
+to{opacity:1;}
+}
+@-webkit-keyframes fadein{from{opacity:0;}
+to{opacity:1;}
+}
+@-o-keyframes fadein{from{opacity:0;}
+to{opacity:1;}
+}
+
+@media screen and (max-width:480px){
+	.header__logo {
+		width: 75px;
+	}
+	.header__title {
+		font-size: 0.75em;
+	}
+}
+
+@media screen and (max-width:380px){
+	.header__logo {
+		width: 50px;
+	}
+	.header__title {
+		font-size: 0.5em;
+	}
+}
+
+@media screen and (min-width:800px){
+	html{font-size:2rem;line-height:1.5rem;}
+}
