@@ -96,11 +96,7 @@ body > * {
 	border: 3px solid transparent;
 }
 
-.main-nav ul li:hover,
-.main-nav ul li:focus,
-.main-nav ul li:focus-within {
-	border: 3px solid #005281;
-}
+
 
 .main-nav ul li a {
 	padding: 0.25em 0.75em;
@@ -146,3 +142,12 @@ body > * {
 @media screen and (min-width:800px){
 	html{font-size:2rem;line-height:1.5rem;}
 }
+
+@media screen and (min-width:1024px){
+	.main-nav ul li:hover,
+	.main-nav ul li:focus,
+	.main-nav ul li:focus-within {
+		border: 3px solid #005281;
+	}
+}
+
