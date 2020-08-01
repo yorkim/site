@@ -26,7 +26,7 @@ h5,
 h6,
 nav,
 .header__title {
-	font-family: 'Roboto Condensed', Arial;
+	font-family: 'Roboto Condensed', 'Arial Narrow', Arial;
 }
 
 body {
@@ -108,6 +108,10 @@ body > * {
 	transform: skew(20deg);
 	text-decoration:none;
 	color:#333;
+}
+
+.main-nav a:focus {
+	outline: none;
 }
 
 /* .main-nav ul li a:hover, */
